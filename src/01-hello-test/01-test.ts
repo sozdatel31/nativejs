@@ -8,5 +8,5 @@ return a * b;
 }
 
 export function splitIntoWords(sentense: string) {
-    return ["hello", "my"]
+    return sentense.toLowerCase().split(" ").map(w=>w.replace("!",""))
 }
